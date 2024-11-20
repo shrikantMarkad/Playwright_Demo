@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-20T09:43:02 IST" name="Suite" finished-at="2024-11-20T09:44:14 IST" duration-ms="72134">
+    <groups>
+    </groups>
+    <test started-at="2024-11-20T09:43:02 IST" name="Test" finished-at="2024-11-20T09:44:14 IST" duration-ms="72134">
+      <class name="app.Test2">
+        <test-method is-config="true" signature="setup()[pri:0, instance:app.Test2@13330ac6]" started-at="2024-11-20T09:43:02 IST" name="setup" finished-at="2024-11-20T09:43:34 IST" duration-ms="31862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="forget_password()[pri:0, instance:app.Test2@13330ac6]" started-at="2024-11-20T09:43:34 IST" name="forget_password" finished-at="2024-11-20T09:43:51 IST" duration-ms="16285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forget_password -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:app.Test2@13330ac6]" started-at="2024-11-20T09:43:51 IST" name="teardown" finished-at="2024-11-20T09:43:54 IST" duration-ms="3549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- app.Test2 -->
+      <class name="app.Test1">
+        <test-method is-config="true" signature="setup()[pri:0, instance:app.Test1@6581dc0a]" started-at="2024-11-20T09:43:02 IST" name="setup" finished-at="2024-11-20T09:43:35 IST" duration-ms="32454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_login1()[pri:0, instance:app.Test1@6581dc0a]" started-at="2024-11-20T09:43:35 IST" name="test_login1" finished-at="2024-11-20T09:43:57 IST" duration-ms="22151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:app.Test1@6581dc0a]" started-at="2024-11-20T09:43:57 IST" name="teardown" finished-at="2024-11-20T09:43:58 IST" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:app.Test1@6581dc0a]" started-at="2024-11-20T09:43:58 IST" name="setup" finished-at="2024-11-20T09:44:06 IST" duration-ms="8591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_login2()[pri:0, instance:app.Test1@6581dc0a]" started-at="2024-11-20T09:44:06 IST" name="test_login2" finished-at="2024-11-20T09:44:14 IST" duration-ms="7307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login2 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:app.Test1@6581dc0a]" started-at="2024-11-20T09:44:14 IST" name="teardown" finished-at="2024-11-20T09:44:14 IST" duration-ms="576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- app.Test1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
