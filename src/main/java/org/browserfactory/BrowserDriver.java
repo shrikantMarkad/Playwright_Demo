@@ -22,9 +22,7 @@ public class BrowserDriver {
 
 		      if (test_browser.equals("chromium")) 
 		      {
-		        browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
-		                .setHeadless(true)
-		                .setChannel("chrome"));
+		        browser = playwright.chromium().launch();
 		      } 
 		      else if (test_browser.equals("firefox")) 
 		      {
