@@ -1,17 +1,10 @@
 package org.browserfactory;
 
-
-import java.awt.Dimension;
-import java.awt.Toolkit;
-import java.util.List;
-
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
-import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
-import com.microsoft.playwright.BrowserContext;
 
-import utils.ConfigReader;
+import test_utils.ConfigReader;
 
 public class BrowserDriver {
 	
