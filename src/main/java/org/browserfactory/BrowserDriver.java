@@ -30,19 +30,19 @@ public class BrowserDriver {
 		      if (test_browser.equals("chromium")) 
 		      {
 		        browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
-		                .setHeadless(false)
+		                .setHeadless(true)
 		                .setChannel("chrome"));
 		      } 
 		      else if (test_browser.equals("firefox")) 
 		      {
 		        browser = playwright.firefox().launch(new BrowserType.LaunchOptions()
-		                .setHeadless(false)
+		                .setHeadless(true)
 		                .setChannel("firefox"));
 		      } 
 		      else if (test_browser.equals("webkit")) 
 		      {
 		        browser = playwright.webkit().launch(new BrowserType.LaunchOptions()
-		                .setHeadless(false)
+		                .setHeadless(true)
 		                .setChannel("webkit"));
 		      }
 
