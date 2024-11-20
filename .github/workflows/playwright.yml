@@ -21,7 +21,7 @@ jobs:
     - name: Run tests
       run: mvn test
     - name: Publish Execution Reports
-      uses: upload-artifact@v2
+      uses: actions/upload-artifact@v2
       with:
         name: reports
         path: target/
