@@ -1,17 +1,10 @@
 package org.browserfactory;
 
-
-import java.awt.Dimension;
-import java.awt.Toolkit;
-import java.util.List;
-
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
-import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
-import com.microsoft.playwright.BrowserContext;
 
-import utils.ConfigReader;
+import test_utils.ConfigReader;
 
 public class BrowserDriver {
 	
@@ -30,19 +23,19 @@ public class BrowserDriver {
 		      if (test_browser.equals("chromium")) 
 		      {
 		        browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
-		                .setHeadless(false)
+		                .setHeadless(true)
 		                .setChannel("chrome"));
 		      } 
 		      else if (test_browser.equals("firefox")) 
 		      {
 		        browser = playwright.firefox().launch(new BrowserType.LaunchOptions()
-		                .setHeadless(false)
+		                .setHeadless(true)
 		                .setChannel("firefox"));
 		      } 
 		      else if (test_browser.equals("webkit")) 
 		      {
 		        browser = playwright.webkit().launch(new BrowserType.LaunchOptions()
-		                .setHeadless(false)
+		                .setHeadless(true)
 		                .setChannel("webkit"));
 		      }
 
