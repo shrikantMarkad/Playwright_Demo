@@ -18,8 +18,14 @@ jobs:
       run: mvn -B install -D skipTests --no-transfer-progress
     - name: Ensure browsers are installed
       run: mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps"
-    - name: Run tests
-      run: mvn test
+
+    - name: Setup xvfb for screen 0
+      run: Xvfb :1 -screen 0 1600x1200x24 &
+    - run: mvn test
+      env:
+        DISPLAY: :1
+    - name: Tear down xvfb
+      run: killall Xvfb
     - name: Publish Execution Reports
       uses: actions/upload-artifact@v4
       with:
